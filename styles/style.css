@@ -50,6 +50,7 @@ table {
 
 .container {
 	position: relative;
+  min-width: 1240px;
 }
 
 /* Styling everything whithin the header */
@@ -121,16 +122,82 @@ li.selected a {
 	color: #4285f4;
 }
 
+.fourth {
+  position: absolute;
+  top: 12px;
+  right: 0px;
+  margin-right: 30px;
+}
+
+.fourth li {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.fourth img {
+  transform: translateY(32%);
+}
+
+/* Styling results block*/
+
 .results {
-	border: 1px solid black;
+	position: absolute;
+	top: 130px;
+	left: 180px;
+	height: 300px;
+  width: 600px;
+}
+
+p.count_line {
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  color: #777;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+h1 {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 7px;
+}
+
+br {
+  display: block;
+}
+
+div.answer {
+  margin-bottom: 10px;
+  padding-left: 15px;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  line-height: 130%;
+  color: #777;
+}
+
+.green {
+  color: #006621;
+}
+
+.top-font {
+  color: #1a0dab;
+  font-size: 18px;
+}
+
+.answer a:hover {
+  color: #1a0dab;
+  text-decoration: underline;
 }
 
 /* Styling everything which is within the footer */
 
 .footer {
-	position: relative;
-	height: 110px;
+	position: fixed;
+	height: 90px;
 	min-width: 960px;
+  width: 100%;
+	bottom: 0;
+	left: 0;
 	background-color: #f2f2f2;
 	border-top: 1px solid #e4e4e4;
 	font-family: arial, sans-serif;
@@ -154,7 +221,7 @@ a:hover {
 }
 
 ul {
-	margin-left: 120px;
+	margin-left: 180px;
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
