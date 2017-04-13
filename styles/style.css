@@ -52,9 +52,73 @@ table {
 	position: relative;
 }
 
+/* Styling everything whithin the header */
+
 .header {
-	border: 1px solid black;
-	height: 120px;
+	position: relative;
+	border-bottom: 1px solid #ebebeb;
+	height: 130px;
+}
+
+/* Header is divided into 3 block elements */
+
+.first {
+	width: 150px;
+	height: inherit;
+	position: absolute;
+	top: 50%;
+}
+
+.first img {
+	width: inherit;
+	transform: translateY(-80%);
+	margin-left: 15px;
+}
+
+.second {
+	height: inherit;
+	position: absolute;
+	left: 180px;
+	top: 50%;
+}
+
+.second form {
+	transform: translateY(-85%);
+}
+
+form input {
+	width: 670px;
+	height: 30px;
+}
+
+.third {
+	height: inherit;
+	font-family: arial, sans-serif;
+	font-size: 14px;
+	position: absolute;
+	left: 180px;
+	top: 75%;
+}
+
+.third ul {
+	margin: 0;
+	margin-top: -3px;
+}
+
+.third li {
+	display: inline-block;
+	color: #777;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.third li.selected {
+	padding-bottom: 19px;
+	border-bottom: 3px solid #4285f4;
+}
+
+li.selected a {
+	color: #4285f4;
 }
 
 .results {
